@@ -1,0 +1,35 @@
+.food-list {
+  padding: 100px 150px;
+  background-color: #1c1c1c;
+}
+.food-list__pages {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.food-list__page {
+  min-width: 262px;
+  height: 320px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.food-list__page-img {
+  width: 262px;
+  height: 175px;
+  background-position: center;
+  background-size: cover;
+}
+.food-list__page-text {
+  width: 262px;
+  height: 145px;
+  padding: 20px;
+  background-color: #312f30;
+}
+.food-list__page-text p {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 19px;
+  text-align: center;
+}

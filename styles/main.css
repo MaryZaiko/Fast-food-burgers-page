@@ -1,0 +1,80 @@
+main {
+  background-image: url(../assets/img/bg_header.png);
+  padding: 0px 150px;
+  min-height: 100vh;
+  background-position: center;
+  background-size: cover;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  margin-bottom: 105px;
+}
+
+header img {
+  width: 100px;
+  height: 100px;
+}
+nav {
+  display: flex;
+  gap: 30px;
+}
+.navigation-header {
+  text-decoration: none;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 18px;
+  color: #fff;
+  white-space: nowrap;
+}
+/* не работает */
+.navigation-header:visited {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+  opacity: 0.7;
+}
+.about-us {
+  width: 550px;
+}
+.about-us :first-child {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 16px;
+}
+@media (max-width: 1000px) {
+  header {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 50px;
+  }
+}
+@media (max-width: 880px) {
+  .about-us {
+    width: 300px;
+  }
+}
+@media (max-width: 600px) {
+  main {
+    padding: 0px 90px;
+  }
+  nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 480px) {
+  main {
+    padding: 0px 40px;
+  }
+  .about-us {
+    width: 200px;
+  }
+}
