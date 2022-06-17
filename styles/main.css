@@ -1,17 +1,16 @@
-main {
-  background-image: url(../assets/img/bg_header.png);
-  padding: 0px 150px;
-  min-height: 100vh;
-  background-position: center;
-  background-size: cover;
-}
-
-header {
+.navigation-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 30px;
   margin-bottom: 105px;
+}
+header {
+  background-image: url(../assets/img/bg_header.png);
+  min-height: 100vh;
+  background-position: center;
+  background-size: cover;
+  padding: 0 150px;
 }
 
 header img {
@@ -48,7 +47,7 @@ nav {
   line-height: 16px;
 }
 @media (max-width: 1000px) {
-  header {
+  .navigation-container {
     justify-content: center;
     flex-wrap: wrap;
     gap: 15px;
@@ -61,7 +60,7 @@ nav {
   }
 }
 @media (max-width: 600px) {
-  main {
+  header {
     padding: 0px 90px;
   }
   nav {
@@ -71,7 +70,7 @@ nav {
   }
 }
 @media (max-width: 480px) {
-  main {
+  header {
     padding: 0px 40px;
   }
   .about-us {

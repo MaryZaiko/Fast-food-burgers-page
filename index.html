@@ -25,8 +25,9 @@
   </head>
   <body>
     <!-- стили в main.css -->
-    <main>
-      <header>
+
+    <header>
+      <div class="navigation-container">
         <div>
           <img src="assets/img/logo.png" alt="logo" />
         </div>
@@ -38,9 +39,9 @@
           <a href="#" class="navigation-header">SHOP</a>
         </nav>
         <button>ORDER NOW</button>
-      </header>
+      </div>
 
-      <section class="about-us">
+      <div class="about-us">
         <p>FAST FOOD BURGERS</p>
         <h1>The fastest food, for instant hunger.</h1>
         <p>
@@ -49,195 +50,246 @@
           thoughts, my words & my food and gone back for seconds.
         </p>
         <button>ORDER NOW</button>
+      </div>
+    </header>
+    <main>
+      <!-- стили в food_list.css -->
+      <section class="food-list">
+        <div class="food-list__pages">
+          <div class="food-list__page">
+            <div class="food-list__page-img">
+              <img src="assets/img/ChickenPaella.png" alt="foto" />
+            </div>
+            <div class="food-list__page-text">
+              <h4>Chicken Paella</h4>
+              <p>We just don't make and sell food.Good food warms.</p>
+            </div>
+          </div>
+          <div class="food-list__page">
+            <div class="food-list__page-img">
+              <img src="assets/img/TacoDelMar.png" alt="foto" />
+            </div>
+            <div class="food-list__page-text">
+              <h4>Taco Del Mar</h4>
+              <p>
+                Taco Del Mar brings the best out of Mexican cuisine with fresh.
+              </p>
+            </div>
+          </div>
+          <div class="food-list__page">
+            <div class="food-list__page-img">
+              <img src="assets/img/BonAuPain.png" alt="foto" />
+            </div>
+            <div class="food-list__page-text">
+              <h4>Bon Au Pain</h4>
+              <p>Bon Au Pain is a pioneer in the healthy fast food scene.</p>
+            </div>
+          </div>
+          <div class="food-list__page">
+            <div class="food-list__page-img">
+              <img src="assets/img/PizzaHut.png" alt="foto" />
+            </div>
+            <div class="food-list__page-text">
+              <h4>Pizza Hut.</h4>
+              <p>
+                Although the Pizza Hut Menu Prices have tumbled over the years.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- стили в hit_product.css -->
+      <section class="hit-product">
+        <div class="hit-product__container">
+          <div class="hit-product__img">
+            <img src="assets/img/Burgerking.png" alt="Burger King" />
+          </div>
+          <div class="hit-product__text">
+            <h2>Burger King</h2>
+            <p>
+              Together with McDonald’s, Burger King has grown to become
+              synonymous with burgers in the US.
+            </p>
+            <div>
+              <span>$6</span>
+              <s>$8</s>
+            </div>
+            <button>ORDER NOW</button>
+          </div>
+        </div>
+      </section>
+      <!-- стили в product_options.css -->
+      <section class="product-options">
+        <div
+          class="product-options__card"
+          style="
+            background-image: url(assets/img/bg-DairyQueen.png);
+            justify-content: end;
+          "
+        >
+          <div class="product-options__text-content">
+            <h3>Dairy Queen</h3>
+            <p>Dairy Queen is one of the biggest fast-food.</p>
+            <div>
+              <span>$4</span>
+              <s>$6</s>
+            </div>
+            <button>ORDER NOW</button>
+          </div>
+        </div>
+        <div
+          class="product-options__card"
+          style="
+            background-image: url(assets/img/bg-pizza.png);
+            justify-content: start;
+          "
+        >
+          <div class="product-options__text-content">
+            <h3>Pizza Hut</h3>
+            <p>Although the Pizza Hut Menu Prices .</p>
+            <div>
+              <span>$3</span>
+              <s>$7</s>
+            </div>
+            <button>ORDER NOW</button>
+          </div>
+        </div>
+        <div
+          class="product-options__card"
+          style="
+            background-image: url(assets/img/bg-PapaJ.png);
+            justify-content: start;
+          "
+        >
+          <div class="product-options__text-content">
+            <h3>Burger King</h3>
+            <p>Together with McDonald’s, Burger King.</p>
+            <div>
+              <span>$5</span>
+              <s>$6</s>
+            </div>
+            <button>ORDER NOW</button>
+          </div>
+        </div>
+        <div
+          class="product-options__card"
+          style="
+            background-image: url(assets/img/bg-DairyQueen.png);
+            justify-content: end;
+          "
+        >
+          <div class="product-options__text-content">
+            <h3>Papa John’s</h3>
+            <p>Papa John’s is one of the most popular fast-food.</p>
+            <div>
+              <span>$6</span>
+              <s>$8</s>
+            </div>
+            <button>ORDER NOW</button>
+          </div>
+        </div>
+      </section>
+      <!-- стили в feedback.css -->
+
+      <section class="feedback">
+        <div class="big-circle">
+          <img data-feedback-client="0" src="assets/img/foto1.png" alt="foto" class="client1" />
+          <img data-feedback-client="1" src="assets/img/foto2.png" alt="foto" class="client2" />
+          <img data-feedback-client="2" src="assets/img/foto3.png" alt="foto" class="client3" />
+          <img data-feedback-client="3" src="assets/img/foto4.png" alt="foto" class="client4" />
+          <div class="small-circle">
+            <img data-feedback-client="4" src="assets/img/foto5.png" alt="foto" class="client5" />
+          </div>
+        </div>
+  
+        <div class="feedback__text">
+          <div class="feedback__text-wrap active" data-feedback-text="0">
+            <div class="orange-circle">
+              <img src="assets/img/quotation-marks.png" />
+            </div>
+            <div>
+              <p>
+                Thanks a lot for the prompt service. Really appreciate. Excellence
+                taste in Every Bite.Add a joy of best Taste. Foodie Moments.
+              </p>
+              <h4>Adele A. McNeill</h4>
+              <p style="font-size: 12px;">AMIRICAN</p>
+            </div>
+          </div>
+          <div class="feedback__text-wrap" data-feedback-text="1">
+            <div class="orange-circle">
+              <img src="assets/img/quotation-marks.png" />
+            </div>
+            <div>
+              <p>
+                111Thanks a lot for the prompt service. Really appreciate. Excellence
+                taste in Every Bite.Add a joy of best Taste. Foodie Moments.
+              </p>
+              <h4>Adele A. McNeill</h4>
+              <p style="font-size: 12px;">AMIRICAN</p>
+            </div>
+          </div>
+          <div class="feedback__text-wrap" data-feedback-text="2">
+            <div class="orange-circle">
+              <img src="assets/img/quotation-marks.png" />
+            </div>
+            <div>
+              <p>
+                222Thanks a lot for the prompt service. Really appreciate. Excellence
+                taste in Every Bite.Add a joy of best Taste. Foodie Moments.
+              </p>
+              <h4>Adele A. McNeill</h4>
+              <p style="font-size: 12px;">AMIRICAN</p>
+            </div>
+          </div>
+          <div class="feedback__text-wrap" data-feedback-text="3">
+            <div class="orange-circle">
+              <img src="assets/img/quotation-marks.png" />
+            </div>
+            <div>
+              <p>
+                333Thanks a lot for the prompt service. Really appreciate. Excellence
+                taste in Every Bite.Add a joy of best Taste. Foodie Moments.
+              </p>
+              <h4>Adele A. McNeill</h4>
+              <p style="font-size: 12px;">AMIRICAN</p>
+            </div>
+          </div>
+          <div class="feedback__text-wrap" data-feedback-text="4">
+            <div class="orange-circle">
+              <img src="assets/img/quotation-marks.png" />
+            </div>
+            <div>
+              <p>
+                444Thanks a lot for the prompt service. Really appreciate. Excellence
+                taste in Every Bite.Add a joy of best Taste. Foodie Moments.
+              </p>
+              <h4>Adele A. McNeill</h4>
+              <p style="font-size: 12px;">AMIRICAN</p>
+            </div>
+          </div>
+        </div>
+  
+      </section>
+      <!-- стили в feedback.css -->
+      <section class="our-menu">
+        <div class="our-menu__container">
+          <h2 style="white-space: nowrap">Download Our Menu</h2>
+          <button>DOWNLOAD</button>
+        </div>
       </section>
     </main>
-    <!-- стили в food_list.css -->
-    <section class="food-list">
-      <div class="food-list__pages">
-        <div class="food-list__page">
-          <div
-            class="food-list__page-img"
-            style="background-image: url(assets/img/ChickenPaella.png);"
-          ></div>
-          <div class="food-list__page-text">
-            <h4>Chicken Paella</h4>
-            <p>We just don't make and sell food.Good food warms.</p>
-          </div>
-        </div>
-        <div class="food-list__page">
-          <div
-            class="food-list__page-img"
-            style="background-image: url(assets/img/TacoDelMar.png);"
-          ></div>
-          <div class="food-list__page-text">
-            <h4>Taco Del Mar</h4>
-            <p>
-              Taco Del Mar brings the best out of Mexican cuisine with fresh.
-            </p>
-          </div>
-        </div>
-        <div class="food-list__page">
-          <div
-            class="food-list__page-img"
-            style="background-image: url(assets/img/BonAuPain.png);"
-          ></div>
-          <div class="food-list__page-text">
-            <h4>Bon Au Pain</h4>
-            <p>Bon Au Pain is a pioneer in the healthy fast food scene.</p>
-          </div>
-        </div>
-        <div class="food-list__page">
-          <div
-            class="food-list__page-img"
-            style="background-image: url(assets/img/PizzaHut.png);"
-          ></div>
-          <div class="food-list__page-text">
-            <h4>Pizza Hut.</h4>
-            <p>
-              Although the Pizza Hut Menu Prices have tumbled over the years.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- стили в hit_product.css -->
-    <section class="hit-product">
-      <div class="hit-product__container">
-        <div class="hit-product__img">
-          <img src="assets/img/Burgerking.png" alt="Burger King" />
-        </div>
-        <div class="hit-product__text">
-          <h2>Burger King</h2>
-          <p>
-            Together with McDonald’s, Burger King has grown to become synonymous
-            with burgers in the US.
-          </p>
-          <div>
-            <span>$6</span>
-            <s>$8</s>
-          </div>
-          <button>ORDER NOW</button>
-        </div>
-      </div>
-    </section>
-    <!-- стили в product_options.css -->
-    <section class="product-options">
-      <div
-        class="product-options__card"
-        style="
-          background-image: url(assets/img/bg-DairyQueen.png);
-          justify-content: end;
-        "
-      >
-        <div style="width: 270px;">
-          <h3>Dairy Queen</h3>
-          <p>Dairy Queen is one of the biggest fast-food.</p>
-          <div>
-            <span>$4</span>
-            <s>$6</s>
-          </div>
-          <button>ORDER NOW</button>
-        </div>
-      </div>
-      <div
-        class="product-options__card"
-        style="
-          background-image: url(assets/img/bg-pizza.png);
-          justify-content: start;
-        "
-      >
-        <div style="width: 270px;">
-          <h3>Pizza Hut</h3>
-          <p>Although the Pizza Hut Menu Prices .</p>
-          <div>
-            <span>$3</span>
-            <s>$7</s>
-          </div>
-          <button>ORDER NOW</button>
-        </div>
-      </div>
-      <div
-        class="product-options__card"
-        style="
-          background-image: url(assets/img/bg-PapaJ.png);
-          justify-content: start;
-        "
-      >
-        <div style="width: 270px;">
-          <h3>Burger King</h3>
-          <p>Together with McDonald’s, Burger King.</p>
-          <div>
-            <span>$5</span>
-            <s>$6</s>
-          </div>
-          <button>ORDER NOW</button>
-        </div>
-      </div>
-      <div
-        class="product-options__card"
-        style="
-          background-image: url(assets/img/bg-DairyQueen.png);
-          justify-content: end;
-        "
-      >
-        <div style="width: 270px;">
-          <h3>Papa John’s</h3>
-          <p>Papa John’s is one of the most popular fast-food.</p>
-          <div>
-            <span>$6</span>
-            <s>$8</s>
-          </div>
-          <button>ORDER NOW</button>
-        </div>
-      </div>
-    </section>
-    <!-- стили в feedback.css -->
 
-    <section class="feedback">
-      <div class="big-circle">
-        <img src="assets/img/foto1.png" alt="foto" class="client1" />
-        <img src="assets/img/foto2.png" alt="foto" class="client2" />
-        <img src="assets/img/foto3.png" alt="foto" class="client3" />
-        <img src="assets/img/foto4.png" alt="foto" class="client4" />
-        <div class="small-circle">
-          <img src="assets/img/foto5.png" alt="foto" class="client5" />
-        </div>
-      </div>
-      <div class="feedback__text">
-        <div class="orange-circle">
-          <img src="assets/img/quotation-marks.png" />
-        </div>
-        <div>
-          <p>
-            Thanks a lot for the prompt service. Really appreciate. Excellence
-            taste in Every Bite.Add a joy of best Taste. Foodie Moments.
-          </p>
-          <h4>Adele A. McNeill</h4>
-          <p style="font-size: 12px;">AMIRICAN</p>
-        </div>
-      </div>
-    </section>
-    <!-- стили в feedback.css -->
-    <section class="our-menu">
-      <div class="our-menu__container">
-        <h2 style="white-space: nowrap;">Download Our Menu</h2>
-        <button>DOWNLOAD</button>
-      </div>
-    </section>
     <!-- стили в footer.css -->
     <footer>
       <div class="footer-links">
         <div><img src="assets/img/logo.png" alt="logo" /></div>
         <div>
-          <span class="material-icons-outlined">
-            email
-          </span>
+          <span class="material-icons-outlined"> email </span>
           <a href="mailto:fastfood_usa@gmail.com">fastfood_usa@gmail.com</a>
         </div>
         <div>
-          <span class="material-icons-outlined">
-            language
-          </span>
+          <span class="material-icons-outlined"> language </span>
           <a href=" www.fastfood_usa.com">www.fastfood_usa.com</a>
         </div>
       </div>
@@ -277,5 +329,7 @@
         </div>
       </div>
     </footer>
+    <script src="./script.js"></script>
+
   </body>
 </html>

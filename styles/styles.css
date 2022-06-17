@@ -80,8 +80,13 @@ h5 {
   h2 {
     font-size: 30px;
   }
+  button {
+    min-width: 90px;
+    height: 45px;
+    font-size: 12px;
+  }
 }
-@media (max-width: 480px){
+@media (max-width: 480px) {
   p {
     font-size: 16px;
   }
@@ -90,5 +95,5 @@ h5 {
     margin-bottom: 0;
     line-height: 40px;
   }
-  
+
 }
